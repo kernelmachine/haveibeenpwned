@@ -2,7 +2,7 @@ from hibp import HIBP, AsyncHIBP
 import time
 
 # random set of query paramaters
-names = ['adobe','ashleymadison', 'naughtyamerica', 'myspace'] * 5
+names = ['adobe','ashleymadison', 'naughtyamerica', 'myspace']
 accounts = ["ssgrn", "pegasos1","barackobama"]
 domains = ['twitter.com', 'facebook.com','github.com','adobe.com']
 
