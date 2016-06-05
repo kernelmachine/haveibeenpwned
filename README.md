@@ -1,6 +1,13 @@
 # python-hibp
 Python interface to Have I Been Pwned API
 
+## Dependencies
+
+```
+requests
+gevent
+```
+
 ## What is Have I Been Pwned?
 
 Have I Been Pwned is a free resource to quickly assess if an account or domain has been compromised or "pwned" in a data breach. By aggregating the data here the project helps victims be aware of account compromises, and highlights the severity of the risks of Internet-wide attacks. For info on who, what, and why, check out (https://haveibeenpwned.com/About)
@@ -13,6 +20,7 @@ To install, run:
 $ pip install hibp
 ```
 
+
 You can query breach data on individual accounts/domains as well as data on full breaches. Each service request object contains a response attribute that holds the raw data output in JSON format. To perform a query, just setup a service request object, and then execute:
 
 ```python
@@ -22,7 +30,7 @@ You can query breach data on individual accounts/domains as well as data on full
 ```
 
 
-If you want to query on multiple accounts or domains at once, you can use the `AsyncHIBP` object.
+If you want to query on multiple accounts or domains at once, you can use the `AsyncHIBP` object, which performs queries concurrently via gevent.
 
 ```python
 >> names = ['adobe','ashleymadison', 'myspace']
@@ -31,7 +39,7 @@ If you want to query on multiple accounts or domains at once, you can use the `A
 >> [async_req.response for async_req in async_reqs]
 ```
 
-In addition to a canonically concurrent `map` method, `AsyncHIBP` also supports the method `imap`, which returns a generator object for lazy evaluation.
+In addition to a canonical `map` method, `AsyncHIBP` also supports the `imap` method, which returns a generator object for lazy queries.
 
 
 ```python
