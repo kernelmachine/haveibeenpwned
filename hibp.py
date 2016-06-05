@@ -187,8 +187,8 @@ class AsyncHIBP(object):
             - hibp_obj -> HIBP object
         '''
         if self.pool is not None:
-            return self.pool.spawn(obj.execute)
-        return gevent.spawn(obj.execute)
+            return self.pool.spawn(hibp_obj.execute)
+        return gevent.spawn(hibp_obj.execute)
 
     def map(self,hibp_objs):
         '''
@@ -199,4 +199,4 @@ class AsyncHIBP(object):
         '''
         jobs = [self.send(hibp_obj) for hibp_obj in hibp_objs]
         gevent.joinall(jobs, timeout=self.timeout)
-        return reqs
+        return hibp_objs
