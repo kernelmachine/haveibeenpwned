@@ -1,6 +1,11 @@
 # python-hibp
 Python interface to Have I Been Pwned API
 
+
+## What is Have I Been Pwned?
+
+Have I Been Pwned is a free resource to quickly assess if an account or domain has been compromised or "pwned" in a data breach. By aggregating the data here the project helps victims be aware of account compromises, and highlights the severity of the risks of Internet-wide attacks. For info on who, what, and why, check out (https://haveibeenpwned.com/About)
+
 ## Dependencies
 
 ```
@@ -8,9 +13,7 @@ requests
 gevent
 ```
 
-## What is Have I Been Pwned?
-
-Have I Been Pwned is a free resource to quickly assess if an account or domain has been compromised or "pwned" in a data breach. By aggregating the data here the project helps victims be aware of account compromises, and highlights the severity of the risks of Internet-wide attacks. For info on who, what, and why, check out (https://haveibeenpwned.com/About)
+## Setup
 
 This library runs on **Python3.x+**
 
@@ -20,6 +23,7 @@ To install, run:
 $ pip install hibp
 ```
 
+## To run
 
 You can query breach data on individual accounts/domains as well as data on full breaches. Each service request object contains a response attribute that holds the raw data output in JSON format. To perform a query, just setup a service request object, and then execute:
 
