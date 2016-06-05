@@ -200,3 +200,14 @@ class AsyncHIBP(object):
         jobs = [self.send(hibp_obj) for hibp_obj in hibp_objs]
         gevent.joinall(jobs, timeout=self.timeout)
         return hibp_objs
+
+    def imap(self,hibp_objs):
+        '''
+        Lazily + Asynchronously map the HIBP execution job to multiple queries.
+
+        Attributes:
+            - hibp_objs - list of HIBP objects
+        '''
+        for hibp_obj in self.pool.imap_unordered(HIBP.execute, hibp_objs):
+                yield hibp_obj.response
+        self.pool.join()
