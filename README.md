@@ -4,7 +4,7 @@ Python interface to Have I Been Pwned API
 
 ## What is Have I Been Pwned?
 
-[Have I Been Pwned](https://haveibeenpwned.com/) is a free resource to quickly assess if an account or domain has been compromised or "pwned" in a data breach. By aggregating the data here the project helps victims be aware of account compromises, and highlights the severity of the risks of Internet-wide attacks. For more information on who, what, and why, click [here]((https://haveibeenpwned.com/About)
+[Have I Been Pwned](https://haveibeenpwned.com/) is a free resource to quickly assess if an account or domain has been compromised or "pwned" in a data breach. By aggregating the data here the project helps victims be aware of account compromises, and highlights the severity of the risks of Internet-wide attacks. For more information on who, what, and why, click [here](https://haveibeenpwned.com/About)
 
 ## Dependencies
 
