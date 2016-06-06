@@ -1,8 +1,6 @@
 from enum import Enum
 import re
 
-
-
 try:
     import requests
 except ImportError:
