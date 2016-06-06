@@ -156,7 +156,7 @@ class HIBP(object):
         else:
             self.response = response.json()
         return self
-
+        
 class AsyncHIBP(object):
     '''
     Generic AsyncHIBP object. Use this object to do concurrent HIBP requests

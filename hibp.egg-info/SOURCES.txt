@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+hibp/__init__.py
+hibp/example.py
+hibp/hibp.py
+hibp.egg-info/PKG-INFO
+hibp.egg-info/SOURCES.txt
+hibp.egg-info/dependency_links.txt
+hibp.egg-info/requires.txt
+hibp.egg-info/top_level.txt
