@@ -92,7 +92,7 @@ To give you an idea of the data you can see from this API, here are some example
     }
 ```
 
-## Concurrent queries
+## Concurrent and Lazy queries
 
 If you want to query on multiple accounts or domains at once, you can use the `AsyncHIBP` object, which performs queries concurrently via gevent.
 
