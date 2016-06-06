@@ -103,7 +103,7 @@ If you want to query on multiple accounts or domains at once, you can use the `A
 >> [async_req.response for async_req in async_reqs]
 ```
 
-In addition to a canonical `map` method, `AsyncHIBP` also supports the `imap` method, which returns a generator object for lazy queries.
+In addition to a canonical `map` method, `AsyncHIBP` also supports the `imap` method, which returns a generator for lazy queries.
 
 
 ```python
