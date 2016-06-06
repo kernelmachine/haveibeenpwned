@@ -2,6 +2,9 @@
 
 Python interface to Have I Been Pwned API
 
+## Recent Changes 
+
+0.0.5 - Things are now stable
 
 ## What is Have I Been Pwned?
 
@@ -16,7 +19,7 @@ gevent
 
 ## Setup
 
-This library runs on **Python3.x+**
+This library runs on **Python 2.7-3.4**
 
 To install, run:
 
