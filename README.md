@@ -37,7 +37,7 @@ You can query breach data on individual accounts/domains as well as data on full
 >> req.response
 ```
 
-## What data do I see?
+## Data
 
 To give you an idea of the data you can see from this API, here are some example JSON outputs.
 
