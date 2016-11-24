@@ -1,4 +1,4 @@
-from hibp import HIBP, AsyncHIBP
+from .hibp import HIBP, AsyncHIBP
 
 
 class hibp(object):
