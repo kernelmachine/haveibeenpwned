@@ -153,6 +153,8 @@ class HIBP(object):
             return self
         elif response.status_code == 404 and self.service == Services.Breach:
             raise ValueError("invalid breach name {}.".format(self.param))
+        elif response.status_code == 429 and self.service == Services.AccountBreach:            
+            raise ValueError("Rate limit error {}.".format(self.param)) 
         else:
             self.response = response.json()
         return self
